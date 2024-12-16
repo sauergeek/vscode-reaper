@@ -112,6 +112,9 @@ while ($line = <PS>)
     # Undying processes derived from VSCode
     if ($proc =~ /\/\.vscode-server\// ||
 	$proc =~ /\/\.vscode-server-insiders\// ||
+        $proc =~ /\/\.cursor-server\// ||
+        $proc eq "/usr/bin/zsh -i" ||
+        $proc eq "zsh -l" ||
 	$proc eq "tcsh -c bash" ||
 	$proc eq "bash" ||
 	$proc eq "-bin/tcsh" ||
