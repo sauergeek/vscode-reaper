@@ -56,7 +56,7 @@ $processgen = "/bin/ps --no-headers -eo user,pid,lstart,cmd";
     );
 $daysec = 24 * 60 * 60;
 $now = time();
-$yesterday = $time - $daysec;
+$yesterday = $now - $daysec;
 
 if (! open (PS, "$processgen |"))
 {
